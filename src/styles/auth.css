@@ -1,0 +1,263 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.login-page .text-part {
+  padding-left: 140px;
+}
+.btns .google-btn img {
+  width: 80px;
+  height: 40px;
+}
+.login-page .text-part header {
+  font-family: Raleway sans-serif;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 50px;
+
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+.login-page .text-part .sign-up-link {
+  font-family: Raleway sans-serif;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.5%;
+  color: #5c4529;
+  padding-top: 15px;
+}
+.text-part .inputs input {
+  width: 400px;
+  height: 50px;
+  border: none;
+  opacity: 1;
+  background-color: #f4f2ef;
+  display: flex;
+  margin-top: 40px;
+  flex-direction: column;
+  border-radius: 10px;
+}
+.text-part .inputs input::placeholder {
+  font-family: Raleway sans-serif;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.5%;
+  color: #bdbdbd;
+  padding-left: 50px;
+}
+.text-part .inputs input:hover {
+  border: 2px solid #000000;
+  transition: 0.3s;
+}
+
+.text-part .remember {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 400px;
+  gap: 20px;
+  padding-top: 40px;
+  color: #5c4529;
+}
+.text-part .remember a {
+  color: #5c4529;
+}
+.text-part .remember .check-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  color: #5c4529;
+}
+.text-part .remember .check-box input {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #000000;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.text-part .remember .check-box label {
+  font-family: Raleway sans-serif;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.5%;
+  color: #000000;
+  cursor: pointer;
+}
+p a {
+  color: blue;
+}
+
+.text-part .btns button {
+  width: 400px;
+  height: 50px;
+  border: none;
+  color: white;
+  font-size: 20px;
+  background-color: #ff8a00;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.text-part .btns {
+  display: flex;
+  max-width: 400px;
+  flex-direction: column;
+  padding-top: 40px;
+  gap: 20px;
+}
+.text-part .inputs input::placeholder {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #bdbdbd;
+  letter-spacing: 0.5%;
+}
+
+
+.text-part .inputs input:focus::placeholder {
+  color: transparent;
+}
+
+.text-part .inputs input:focus {
+  outline: none;
+  border: 2px solid #ff8a00;
+  background-color: #fff;
+}
+.text-part .inputs input {
+  padding-left: 50px; 
+  transition: 0.3s;
+}
+
+.text-part .btns .google-btn {
+  cursor: pointer;
+  border: 2px solid #b6a38b;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  color: #000000;
+  justify-content: center;
+  align-items: center;
+}
+
+.pic-part .back {
+  position: relative;
+  width: 560px;
+  height: 660px;
+
+  opacity: 0.8;
+}
+.pic-part .food {
+  position: absolute;
+width: 600px;
+  left: 917px;
+}
+.login-page {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+@media (max-width: 1200px) {
+  .login-page {
+    padding: 0 40px;
+  }
+
+  .login-page .text-part {
+    padding-left: 0;
+  }
+
+  .pic-part .back {
+    width: 480px;
+    height: auto;
+  }
+
+  .pic-part .food {
+    position: relative;
+    left: 0;
+    width: 480px;
+  }
+}
+
+@media (max-width: 992px) {
+  .login-page {
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .text-part .inputs input,
+  .text-part .btns,
+  .text-part .btns button {
+    width: 100%;
+    max-width: 360px;
+  }
+
+  .text-part .remember {
+    max-width: 360px;
+  }
+
+  .pic-part {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .login-page {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .login-page .text-part {
+    width: 100%;
+    align-items: center;
+  }
+
+  .login-page .text-part header {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .login-page .text-part .sign-up-link {
+    text-align: center;
+  }
+
+  .text-part .inputs input,
+  .text-part .btns,
+  .text-part .btns button {
+    max-width: 100%;
+  }
+
+  .text-part .remember {
+display: flex;
+    align-items: flex-start;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-page {
+    padding: 30px 16px;
+  }
+
+  .login-page .text-part header {
+    font-size: 28px;
+  }
+
+  .text-part .inputs input,
+  .text-part .btns button {
+    height: 46px;
+    font-size: 16px;
+  }
+
+  .text-part .remember {
+    font-size: 14px;
+  }
+}

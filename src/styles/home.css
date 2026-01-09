@@ -1,0 +1,270 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.home-page .part-text{
+  display: flex;
+  padding-top: 70px;
+flex-direction: column;
+padding-left: 225px;
+
+align-items: start;
+}
+.part-text h1{
+  font-size: 80px;
+  max-width: 50px;
+  color: #311F09;
+  margin-bottom: 20px;
+}
+.part-text p{
+  font-size: 20px;
+  font-weight: 400;
+line-height: 150%;
+  max-width: 555px;
+  color: #5C4529;
+  margin-bottom: 30px;
+word-spacing: 20px;
+
+}
+.part-text .head-text{
+  border: 2px solid #FF8A00;
+  padding: 5px 25px;
+  color: #FF8A00;
+  border-radius: 30px;
+  border: none;
+  background-color: #ff88003c;
+}
+.part-text .head-text:hover{
+  background-color: #FF8A00;
+  color: white;
+  cursor: pointer;
+}
+.part-text .btns{
+  display: flex;
+  gap: 25px;
+
+
+}
+.part-text .btns button{
+  width: 202.4203338623047px;
+height: 64.44068145751953px ;
+cursor: pointer;
+border: none;
+opacity: 1;
+top: 734.8px;
+left: 164px;
+border-radius: 162.94px;
+}
+.part-text .btns .order{
+  background: #FF8A00;
+  color: white;
+  font-size: 20px;
+}
+.part-text .btns .reser{
+  background: #3FA72F;
+  color: white;
+  font-size: 20px;
+  border: 2px solid #3FA72F;
+}
+.home-page{
+  display: flex;
+  justify-content: space-between;
+padding-right: 100px;
+padding-bottom: 100px;
+}
+.home-page .part-image{
+
+padding-top: 60px;
+
+}
+.home-page .part-image img{
+  width: 600px;
+  height: auto;
+}
+
+
+
+@media (max-width: 992px) {
+  .home-page {
+    flex-wrap: wrap;
+ 
+    padding-left: 20px;
+  }
+
+  .home-page .part-text {
+    width: 100%;
+   font-size: 10px;
+
+    align-items:  start;
+  }
+
+  .home-page .part-image {
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .home-page .part-image img {
+    width: 400px;
+  }
+}
+
+@media (max-width: 576px) {
+  .home-page .part-text {
+    padding-left: 0;
+    align-items: start;
+  max-width: 280px;
+    text-align: start;
+  }
+.home-page .part-text p{
+    font-size: 12px;
+   word-spacing: 5px;
+}
+.part-text .btns button{
+    width: 130px;
+    height: 50px;
+
+  }
+  .part-text .btns .order, .part-text .btns .reser{
+       font-size: 15px;
+  }
+  .home-page .part-image {
+padding-left: 100px;
+  }
+    .home-page .part-image img {
+
+      width: 330px;
+  }
+}
+
+.describe{
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding-top: 150px;
+  padding-left: 90px;
+  padding-right: 170px;
+  background-color: #3fa72f1c;
+}
+.describe .pic-part img{
+width: 700px;
+height: auto;
+ 
+}
+.describe .desc-part{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding-left: 50px;
+  padding-top: 50px;
+}
+.describe .desc-part h1{
+  font-size: 80px;
+  color: black;
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+.describe .desc-part  h1 p{
+
+ color: #FF8A00;
+}
+.desc-part .desc-text{
+font-family: Poppins sans-serif;
+font-weight: 400;
+font-style: Regular;
+font-size: 20px;
+max-width: 400px;
+line-height: 150%;
+word-spacing: 10px;
+
+}
+.desc-part .desc-text {
+  color: #5C4529;
+  margin-top: 20px;
+}
+.desc-part button{
+  margin-top: 100px;
+
+  gap: 25px;
+ width:200px;
+height:60px;
+font-size: 20px;
+border: none;
+background-color: #FF8A00;
+color: white;
+cursor: pointer;
+border-radius: 162.94px;
+
+}
+
+@media (max-width: 1200px) {
+  .describe {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .describe .pic-part img {
+    width: 550px;
+  }
+
+  .describe .desc-part h1 {
+    font-size: 64px;
+  }
+}
+
+@media (max-width: 992px) {
+  .describe {
+    flex-wrap: wrap;
+    padding-top: 100px;
+  }
+
+  .describe .desc-part {
+    order: 1;
+    width: 100%;
+    padding-left: 0;
+    padding-top: 60px;
+    align-items: start;
+    text-align: start;
+  }
+
+  .describe .pic-part {
+    order: 2;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+  }
+
+  .describe .pic-part img {
+    width: 480px;
+  }
+}
+
+
+@media (max-width: 576px) {
+  .describe {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .describe .pic-part img {
+    width: 300px;
+  }
+
+  .describe .desc-part h1 {
+    font-size: 38px;
+  }
+
+  .desc-part .desc-text {
+    font-size: 16px;
+    word-spacing: 5px;
+  }
+
+  .desc-part button {
+    width: 100%;
+    max-width: 260px;
+  }
+}
