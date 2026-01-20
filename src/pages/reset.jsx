@@ -14,7 +14,7 @@ function ResetPassword() {
   };
 
   const reset = async () => {
-    const res = await api.post("/reset-password.php", form);
+    const res = await api.post("https://695a18c86c326.clouduz.ru/reset-password.php", form);
 
     if (res.data.status) {
       toast.success(res.data.message);

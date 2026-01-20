@@ -24,7 +24,7 @@ const handleRegister = async () => {
   try {
     setLoading(true);
 
-    const res = await api.post("/register.php", {
+    const res = await api.post("https://695a18c86c326.clouduz.ru/register.php", {
       name: form.name,
       email: form.email,
       password: form.password,

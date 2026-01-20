@@ -29,7 +29,7 @@ function ForgotReset() {
 
     try {
       setLoading(true);
-      const res = await api.post("/forgot-password.php", {
+      const res = await api.post("https://695a18c86c326.clouduz.ru/forgot-password.php", {
         email: form.email,
       });
 
