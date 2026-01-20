@@ -30,11 +30,13 @@ function Login() {
 
     try {
       setLoading(true);
-
-      const res = await api.post("https://695a18c86c326.clouduz.ru/api/login.php", {
-        email: form.email,
-        password: form.password,
-      });
+const res = await api.post(
+  "https://695a18c86c326.clouduz.ru/api/login.php",
+  {
+    email: form.email,
+    password: form.password,
+  }
+);
 
       console.log("LOGIN RESPONSE:", res.data);
 

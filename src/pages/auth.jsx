@@ -24,11 +24,15 @@ const handleRegister = async () => {
   try {
     setLoading(true);
 
-    const res = await api.post("https://695a18c86c326.clouduz.ru/api/register.php", {
-      name: form.name,
-      email: form.email,
-      password: form.password,
-    });
+const res = await api.post(
+  "https://695a18c86c326.clouduz.ru/api/register.php",
+  {
+    name: form.name,
+    email: form.email,
+    password: form.password,
+  }
+);
+
 
     console.log("RESPONSE:", res.data);
 
