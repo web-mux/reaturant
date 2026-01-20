@@ -15,7 +15,7 @@ function ResetPassword() {
 
   const reset = async () => {
   const res = await axios.post(
-  "https://695a18c86c326.clouduz.ru/reset-password.php",
+  "https://695a18c86c326.clouduz.ru/api/reset-password.php",
   form
 );
 

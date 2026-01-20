@@ -31,7 +31,7 @@ function Login() {
     try {
       setLoading(true);
 
-      const res = await api.post("https://695a18c86c326.clouduz.ru/login.php", {
+      const res = await api.post("https://695a18c86c326.clouduz.ru/api/login.php", {
         email: form.email,
         password: form.password,
       });
