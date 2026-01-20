@@ -3,6 +3,7 @@ import "../styles/login.css";
 import api from "../api/axios";
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import Google from "../media/google.png";
 import Back from "../media/login-back.png";
@@ -61,9 +62,9 @@ function Login() {
       <div className="text-part">
         <header>Login</header>
 
-        <p className="sign-up-link">
-          Don't have an account? <a href="/auth">Sign up</a>
-        </p>
+    <p className="sign-up-link">
+  Don't have an account? <Link to="/auth">Sign up</Link>
+</p>
 
         <div className="inputs">
           <input
@@ -85,7 +86,7 @@ function Login() {
             <input type="checkbox" />
             <p>Remember me</p>
           </div>
-          <a href="/forgot-password">Forget Password ?</a>
+        <Link to="/forgot-password">Forget Password ?</Link>
         </div>
 
         <div className="btns">

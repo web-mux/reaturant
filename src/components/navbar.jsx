@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "../styles/navbar.css";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
+
 
 function Navbar() {
   const [open, setOpen] = useState(false);
@@ -17,24 +19,23 @@ function Navbar() {
         </div>
 
         <div className="links desktop">
-          <a href="/login">Home</a>
-          <a href="/auth">Menu</a>
-          <a href="/forgot-password">About us</a>
-          <a href="#">Order online</a>
-          <a href="#">Reservation</a>
-          <a href="#">Contact us</a>
+<Link to="/login">Home</Link>
+<Link to="/auth">Menu</Link>
+<Link to="/forgot-password">About us</Link>
+<Link to="#">Order online</Link>
+<Link to="#">Reservation</Link>
+<Link to="#">Contact us</Link>
         </div>
 
-        <div className="btns desktop">
-          <a href="login">
-            <i className="fa-solid fa-cart-shopping"></i>
-          </a>
-          <button className="login" onClick={() => navigate("/login")}>
-            Login
-          </button>
-        
-        </div>
+  <div className="btns desktop">
+  <Link to="/login">
+    <i className="fa-solid fa-cart-shopping"></i>
+  </Link>
 
+  <button className="login" onClick={() => navigate("/login")}>
+    Login
+  </button>
+</div>
         <div
           className={`burger ${open ? "open" : ""}`}
           onClick={() => setOpen(!open)}
@@ -46,21 +47,24 @@ function Navbar() {
       </nav>
 
       <div className={`mobile-menu ${open ? "active" : ""}`}>
-        <a href="/login">Home</a>
-        <a href="/auth">Menu</a>
-        <a href="#">About us</a>
-        <a href="#">Order online</a>
-        <a href="#">Reservation</a>
-        <a href="#">Contact us</a>
+<Link to="/login">Home</Link>
+<Link to="/auth">Menu</Link>
+<Link to="#">About us</Link>
+<Link to="#">Order online</Link>
+<Link to="#">Reservation</Link>
+<Link to="#">Contact us</Link>
 
-        <div className="mobile-actions">
-          <a href="#">
-            <i className="fa-solid fa-cart-shopping"></i>
-          </a>
-          <button className="login" onClick={() => navigate("/login")}>
-            Login
-          </button> 
-        </div>
+
+   <div className="mobile-actions">
+  <Link to="#">
+    <i className="fa-solid fa-cart-shopping"></i>
+  </Link>
+
+  <button className="login" onClick={() => navigate("/login")}>
+    Login
+  </button>
+</div>
+
       </div>
     </header>
   );

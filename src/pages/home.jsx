@@ -3,7 +3,9 @@ import "../styles/home.css";
 import Food from "../media/food-home.png";
 import FoodDesc from "../media/describe.png";
 import Navbar from "../components/navbar.jsx";
-
+import FirstChef from "../media/first-chef.png";
+import SecondChef from "../media/sec-chef.png";
+import ThirdChef from "../media/third-chef.png";
 function Home() {
   const [category, setCategory] = useState("all");
   const [products, setProducts] = useState([]);
@@ -199,6 +201,46 @@ function Home() {
           </div>
         )}
       </div>
+
+      <div className="chef-section">
+        <h1>Our greatest chef</h1>
+<div className="chef-images">
+  <div className="first">
+    <img src={FirstChef} alt="" />
+    <h2>Betran Komar</h2>
+    <p>Head chef</p>
+  </div>
+  <div className="second">
+    <img src={SecondChef} alt="" />
+    <h2>Ferry Sauwi</h2>
+    <p>Chef</p>
+  </div>
+  <div className="third">
+    <img src={ThirdChef} alt="" />
+    <h2>Iswan Dracho</h2>
+    <p>Chef</p>
+  </div>
+</div>
+
+      </div>
+    <section class="open-banner">
+  <div class="overlay">
+    <h1>we are open from</h1>
+    <h2>Monday–Sunday</h2>
+
+    <p class="time">
+      Lunch: Mon–Sun 11:00am–2:00pm<br />
+      Dinner: Sunday 04:00pm–08:00pm<br />
+      04:00pm–09:00pm
+    </p>
+
+    <div class="buttons">
+      <button class="order">Order now</button>
+      <button class="reserve">Reservation</button>
+    </div>
+  </div>
+</section>
+
     </>
   );
 }

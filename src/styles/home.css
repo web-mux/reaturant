@@ -1,3 +1,6 @@
+
+
+
 *{
   padding: 0;
   margin: 0;
@@ -689,4 +692,128 @@ border-radius: 162.94px;
     width: 90%;
     right: 5%;
   }
+}
+
+
+
+.chef-section{
+  padding-top: 150px;
+  padding-bottom: 150px;
+  text-align: center;
+}
+
+.chef-section .chef-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  gap: 40px;
+}
+.chef-images img{
+  width: 300px;
+  height: auto;
+  cursor: pointer;
+}
+.chef-images img:hover{
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
+
+
+@media (max-width: 992px) {
+  .chef-section .chef-images {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .chef-images img {
+    width: 250px;
+  }
+}
+
+.chef-section h2{
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+.chef-section p{
+  color: #A08D76;
+}
+
+
+.open-banner {
+  width: 100%;
+  max-width: 1200px;
+  height: 420px;
+  margin: auto;
+  border-radius: 24px;
+  background: url("../media/Background.png") center/cover no-repeat;
+  position: relative;
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+  width: 1150;
+height: 588;
+
+opacity: 1;
+
+}
+
+.open-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.overlay {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  padding: 60px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.overlay h1 {
+  font-size: 42px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.overlay h2 {
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+
+.time {
+  font-size: 14px;
+  line-height: 1.8;
+  margin-bottom: 35px;
+  opacity: 0.9;
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.buttons button {
+  padding: 14px 32px;
+  border-radius: 30px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+}
+
+.order {
+  background: #ff8a00;
+  color: #fff;
+}
+
+.reserve {
+  background: #fff;
+  color: #000;
 }

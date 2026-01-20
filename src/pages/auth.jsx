@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "../styles/auth.css";
 import api from "../api/axios";
 import { toast } from "react-toastify";
+import { Link } from "react-router-dom";
 
 import Google from "../media/google.png";
 import Back from "../media/login-back.png";
@@ -54,9 +55,9 @@ const handleRegister = async () => {
       <div className="text-part">
         <header>Sign up</header>
 
-        <p className="sign-up-link">
-          Already have an account? <a href="/login">Log in</a>
-        </p>
+<p className="sign-up-link">
+  Already have an account? <Link to="/login">Log in</Link>
+</p>
 
         <div className="inputs">
           <input
