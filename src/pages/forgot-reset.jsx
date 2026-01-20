@@ -29,9 +29,15 @@ function ForgotReset() {
 
     try {
       setLoading(true);
-      const res = await api.post("https://695a18c86c326.clouduz.ru/forgot-password.php", {
-        email: form.email,
-      });
+ const res = await api.post(
+  "https://695a18c86c326.clouduz.ru/reset-password.php",
+  {
+    email: form.email,
+    code: form.code,
+    password: form.password,
+  }
+);
+
 
       if (!res.data.status) {
         toast.error(res.data.message);
